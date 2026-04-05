@@ -1,7 +1,6 @@
 # Session Handoff — v7.6.0.4: Dashboard Add/Remove/Test Satellite UI (Phase D Step 4)
 
 _Date: 2026-04-03_
-_Repo: https://github.com/GCV-Sleeper-Service/ESP32-GW-multi-sensor_
 _Status: v7.6.0.3 is COMPLETE and merged to main. PR #119 merged 2026-04-02. Dashboard satellite management UI remains read-only placeholder._
 _Prompt audit fixes P1/P2/P4/P7 applied to main in commit 4530d909 (2026-04-03). Prompt is ready for coding agent invocation._
 
