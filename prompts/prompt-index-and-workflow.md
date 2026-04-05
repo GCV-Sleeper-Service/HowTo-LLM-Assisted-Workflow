@@ -112,7 +112,7 @@ The agent will:
    git tag -a v<VERSION> -m "<description from instructions file>"
    git push origin v<VERSION>
    ```
-10. **Record results** — save heap values, screenshots, curl outputs. These become the "device testing results" you paste into the next step\'s prompt.
+10. **Record results** — save heap values, screenshots, curl outputs. These become the "device testing results" you paste into the next step's prompt.
 
 ---
 
