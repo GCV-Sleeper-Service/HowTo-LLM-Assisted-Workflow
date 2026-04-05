@@ -53,7 +53,7 @@ No code fix required — the endpoint is POST-only and DELETE is correctly rejec
 
 **Aggregator state at time of testing:**
 - 2 satellites: `sat-esp32-4m-190` (reachable), `sat-esp32-4m-188` (unreachable)
-- Firmware: v7.6.0.3 at 192.168.120.191
+- Firmware: v7.6.0.3 at 10.10.120.191
 
 ### Cumulative state entering Phase D Step 4
 
@@ -153,7 +153,7 @@ The `_refreshSettingsPanel()` helper in the prompt handles this correctly.
   - POST /api/aggregator/add-satellite (200/400/409)
   - DELETE /api/aggregator/satellite/{id} (200/404)
   - POST /api/aggregator/test-satellite (200/400) — includes authenticate_management_() guard
-- Device testing complete: v7.6.0.3 confirmed at 192.168.120.191 (6/7 tests pass;
+- Device testing complete: v7.6.0.3 confirmed at 10.10.120.191 (6/7 tests pass;
   T7 DELETE is HTTP 000 transport-layer rejection — architectural, not a bug)
 - main is green, all Playwright tests pass
 - Current date: 2026-04-03
@@ -247,7 +247,7 @@ All three endpoints are confirmed working. Dashboard JS must use these exact con
 ### POST /api/aggregator/test-satellite
 
 ```
-POST /api/aggregator/test-satellite?url=http://192.168.x.x
+POST /api/aggregator/test-satellite?url=http://10.10.x.x
 Content-Type: application/x-www-form-urlencoded
 Body: a=1
 ```
@@ -490,7 +490,7 @@ should at minimum verify:
 | T7 | Error handling — bad URL format | curl POST test-satellite (ftp://) | 400 |
 
 **⚠️ Gap from §11 prompt:** The prompt's §11 device tests are browser-centric ("Navigate to
-http://192.168.120.191, click Settings"). These cannot be automated with curl. The gap:
+http://10.10.120.191, click Settings"). These cannot be automated with curl. The gap:
 - §11 Tests 1–5 are manual browser tests — no automated equivalent until v7.6.0.5 Playwright
 - T1–T7 above are curl-level verification that the dashboard's fetch() calls would succeed
 - Human visual verification for dark mode and UI rendering is required
@@ -506,7 +506,7 @@ bash scripts/minify-dashboard.sh       # if exists
 bash scripts/generate-header.sh
 esphome clean firmware/esp32-s3-devkitc1-n16r8-gw.yaml
 esphome run firmware/esp32-s3-devkitc1-n16r8-gw.yaml
-bash scripts/device-test-v7.6.0.4.sh 192.168.120.191  # once created
+bash scripts/device-test-v7.6.0.4.sh 10.10.120.191  # once created
 
 # After device testing, before push:
 bash scripts/provision.sh satellite    # switch back to CI-safe mode
@@ -517,10 +517,10 @@ bash scripts/provision.sh status       # verify CI-safe=YES
 
 ## Device Testing Resources
 
-- **S3 aggregator** (ESP32-S3-DevKitC-1 at 192.168.120.191, PSRAM-equipped, serial `/dev/ttyACM0`)
-- **C3 satellite** (ESP32-C3 SuperMini at 192.168.120.189) — `gw-main`, `Main Gateway`, `ESP32-C3`, 5 sensors
-- **WROOM-32D satellite** (ESP32-WROOM-32D at 192.168.120.190) — `sat-esp32-4m-190`, reachable
-- **Placeholder satellite** (sat-esp32-4m-188 at 192.168.120.188 — in satellite list, unreachable API)
+- **S3 aggregator** (ESP32-S3-DevKitC-1 at 10.10.120.191, PSRAM-equipped, serial `/dev/ttyACM0`)
+- **C3 satellite** (ESP32-C3 SuperMini at 10.10.120.189) — `gw-main`, `Main Gateway`, `ESP32-C3`, 5 sensors
+- **WROOM-32D satellite** (ESP32-WROOM-32D at 10.10.120.190) — `sat-esp32-4m-190`, reachable
+- **Placeholder satellite** (sat-esp32-4m-188 at 10.10.120.188 — in satellite list, unreachable API)
 
 Current aggregator state (as of v7.6.0.3 device test):
 - 2 satellites configured: `sat-esp32-4m-190` (reachable), `sat-esp32-4m-188` (unreachable)
