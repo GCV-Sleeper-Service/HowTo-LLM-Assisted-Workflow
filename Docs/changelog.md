@@ -94,7 +94,7 @@ All notable changes
 
 - **Interactive Settings Panel** — `renderSettingsPanel()` in `dashboard.js` (and mirrored in `dashboard.html`) replaces the read-only satellite list with full management controls:
   - **Add Satellite form** at the top of the settings panel:
-    - URL text input (`http://192.168.x.x`) and optional friendly name input
+    - URL text input (`http://10.10.x.x`) and optional friendly name input
     - `Test` button → `POST /api/aggregator/test-satellite?url=...` with management auth and form-encoded body
     - `Add` button → `POST /api/aggregator/add-satellite?url=...&name=...` (no auth required) with form-encoded body
     - Inline status area — no `alert()` calls
@@ -1189,7 +1189,7 @@ Added `config/aggregator.example.json` with the aggregator role schema: `schema_
 
 **Live aggregator config added for development.**
 `config/aggregator.json` created from the example with `base_url` pointing to actual
-satellite IP (`http://192.168.120.189`). Required so v7.5.5.1 polling task can immediately
+satellite IP (`http://10.10.120.189`). Required so v7.5.5.1 polling task can immediately
 test against a real satellite without extra setup.
 
 **`sensor_manifest_lib.py` extended.**
