@@ -22,17 +22,18 @@ Your job as the human operator is to:
 | Document | Location | Purpose |
 |----------|----------|---------| 
 | Architecture Plan | `Docs/v7.5-v7.6-architecture-plan.md` | Design rationale and phase definitions |
-| Persistence Architecture | `Docs/v7.7-v7.8-persistence-architecture.md` | Per-device persistence design for Phase 7 |
-| Phase 4 Implementation Plan | `Docs/phase4-implementation-plan.md` | Step-level scope for Phase 4 |
-| Phase 5 Implementation Plan | `Docs/phase5-implementation-plan.md` | Step-level scope for Phase 5 |
+| Persistence Architecture | `Docs/v7.7-v7.8-persistence-architecture.md` _(source-project path; not included in this repo)_ | Per-device persistence design for Phase 7 |
+| Phase 4 Implementation Plan | `Docs/phase4-implementation-plan.md` _(source-project path; not included in this repo)_ | Step-level scope for Phase 4 |
+| Phase 5 Implementation Plan | `Docs/phase5-implementation-plan.md` _(source-project path; not included in this repo)_ | Step-level scope for Phase 5 |
 | Phase 6 Implementation Plan | `Docs/phase6-implementation-plan.md` | Step-level scope for Phase 6 |
 | Phase D Implementation Plan | `Docs/phase-d-implementation-plan.md` | Step-level scope for Phase D |
 | Phase 7 Implementation Plan | `Docs/v7.7-implementation-plan.md` | Step-level scope for Phase 7 |
 | Bugs & Lessons Learned | `Docs/bugs-and-lessons-learned.md` | Project guardrails and failure history |
 | **Prompt Writing Guide** | `Docs/writing-prompts-for-coding-agents-guide.md` | How to create and audit prompts |
-| Architecture Forward-Looking Notes | `Docs/architecture-forward-looking-notes.md` | Post-Phase-6 architectural decisions and risks |
-| **Phase D Results and Summary** | `prompts/handoff/phaseD-results.md` | Phase D delivery record, lessons, API contracts |
+| Architecture Forward-Looking Notes | `Docs/architecture-forward-looking-notes.md` _(source-project path; not included in this repo)_ | Post-Phase-6 architectural decisions and risks |
+| **Phase D Results and Summary** | `prompts/handoff/phaseD-results.md` _(source-project path; not included in this repo)_ | Phase D delivery record, lessons, API contracts |
 
+Note: Some document paths above are preserved for traceability to the original source project. Where marked as source-project paths, the referenced files are not included in this repository.
 ---
 
 ## Step-by-Step Workflow
