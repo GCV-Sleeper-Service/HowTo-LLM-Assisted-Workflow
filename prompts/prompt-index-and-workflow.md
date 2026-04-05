@@ -1,7 +1,7 @@
 Coding Agent Prompt Index and Workflow
 
 _Single source of truth for all implementation prompts._
-_Last updated: 2026-04-04 — Phase D complete (v7.6.0.5); Critical Rules 43–44 confirmed; Phase D results and summary produced_
+_Last updated: 2026-04-04 — Phase D complete (v7.6.0.5); Critical Rules 43–46 confirmed; Phase D results and summary produced_
 _Replaces: `phase3-prompt-templates.md`, `phase3-prompt-templates-updated.md`, `prompt-update-summary.md`_
 
 ---
