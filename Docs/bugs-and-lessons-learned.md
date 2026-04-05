@@ -448,7 +448,7 @@ must check for truncation before serving the response.
 **Introduced in:** v7.5.5.0 (aggregator config validator)
 **Fixed in:** v7.5.5.1 post-merge patch
 
-**Symptoms:** Aggregator config with `"base_url": "https://192.168.x.x"` passes `validate_aggregator_config()` but the satellite is permanently marked unreachable at runtime because `fetch_to_buffer()` only supports `http://`.
+**Symptoms:** Aggregator config with `"base_url": "https://10.10.x.x"` passes `validate_aggregator_config()` but the satellite is permanently marked unreachable at runtime because `fetch_to_buffer()` only supports `http://`.
 
 **Root cause:** The Python validator accepted both `http://` and `https://` prefixes, but the C++ HTTP client (`fetch_to_buffer()`) uses raw lwIP sockets without TLS — it rejects any URL not starting with `http://`.
 
@@ -2374,7 +2374,7 @@ Related: BUG-045
 
 **Date:** 2026-03-18
 
-Phase 3 prompt templates (e.g., v7.5.3.7) included device testing commands like `curl -s http://192.168.120.189/api/v2/history/office/temp` but did not include the prerequisite steps: pulling the repo, compiling, and flashing. An operator starting from scratch would not know the full workflow.
+Phase 3 prompt templates (e.g., v7.5.3.7) included device testing commands like `curl -s http://10.10.120.189/api/v2/history/office/temp` but did not include the prerequisite steps: pulling the repo, compiling, and flashing. An operator starting from scratch would not know the full workflow.
 
 **Rule:** Every prompt's device testing section must include the complete sequence: (1) pull latest from main, (2) compile, (3) OTA flash, (4) verification commands, (5) expected output descriptions. Assume the operator is starting from a fresh terminal. Use the v7.5.3.7 instructions as the quality bar for detail level.
 
