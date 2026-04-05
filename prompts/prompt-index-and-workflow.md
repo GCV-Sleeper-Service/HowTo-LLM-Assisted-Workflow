@@ -49,7 +49,7 @@ Your job as the human operator is to:
 Open a **new conversation** with the coding agent (do not continue a previous conversation — each step starts fresh). Paste this:
 
 ```
-Clone https://github.com/GCV-Sleeper-Service/ESP32-GW-multi-sensor
+Clone 
 
 Before making ANY changes, read the implementation instructions file completely:
 prompts/<phase>/<version>-implementation-instructions-for-coding-agent.md
