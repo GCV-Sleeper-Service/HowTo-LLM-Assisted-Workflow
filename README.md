@@ -106,7 +106,7 @@ All documents in this repository originate from another project — an ESP32 BLE
 
 How actual development looks like at this moment:
 
-- The exact coding agent's prompt is given to the coding agent
+- Current step's prompt is given to the coding agent
 - Agent executes the prompt - depending on scope, it can be 2 or 40 minutes
 - Once agent finishes the task, PR is open
 - Copilot's inline review and Gemini's inline review are posted
