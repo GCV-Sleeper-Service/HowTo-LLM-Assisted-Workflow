@@ -41,7 +41,7 @@ Replace the compile-time satellite list with a runtime-configurable system. When
 #define MAX_SATELLITES 2
 static const char* SATELLITE_IDS[] = {"sat-s3-4m-189", "sat-esp32-4m-190"};
 static const char* SATELLITE_NAMES[] = {"First satellite...", "Second satellite..."};
-static const char* SATELLITE_URLS[] = {"http://192.168.120.189", "http://192.168.120.190"};
+static const char* SATELLITE_URLS[] = {"http://10.10.120.189", "http://10.10.120.190"};
 static const int SATELLITE_POLL_INTERVALS[] = {30, 30};
 ```
 
@@ -167,7 +167,7 @@ POST /api/aggregator/add-satellite
 Content-Type: application/json
 
 {
-  "url": "http://192.168.120.191",
+  "url": "http://10.10.120.191",
   "name": "Kitchen Satellite",        // optional — auto-derived from manifest if absent
   "poll_interval": 30                  // optional — default 30
 }
@@ -264,7 +264,7 @@ DELETE /api/aggregator/satellite/{id}
 **API contract:**
 
 ```
-POST /api/aggregator/test-satellite?url=http://192.168.120.191
+POST /api/aggregator/test-satellite?url=http://10.10.120.191
 ```
 
 **Response:**
