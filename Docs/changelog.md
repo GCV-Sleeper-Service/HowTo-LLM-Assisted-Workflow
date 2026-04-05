@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the ESP32-C3 Multi-Sensor BLE Gateway.
+All notable changes
 
 ## [v7.6.0.5] — 2026-04-04 (PR #129) — Phase D Closure: Playwright Tests + Stateful Mock Server
 
