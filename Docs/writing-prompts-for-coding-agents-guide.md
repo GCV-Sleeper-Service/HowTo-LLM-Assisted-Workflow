@@ -1,6 +1,6 @@
 # Writing Effective Prompts for Coding Agents — A Practitioner's Guide
 
-_Based on real prompt failures and revisions from the ESP32-GW Multi-Sensor Gateway project_
+_Based on real prompt failures and revisions_
 _Date: 2026-03-28 (revised post-Phase-6 — added §3.12, §3.13, Gaps 14–18, Checks 11–19, Anti-Patterns 9–13, §14; added §15 v7.5.7.0 lessons)_
 _Audience: Anyone creating implementation prompts for AI coding agents (Claude, Copilot, Cursor, etc.)_
 
@@ -27,7 +27,7 @@ _Audience: Anyone creating implementation prompts for AI coding agents (Claude, 
 
 ## 1. Why This Document Exists
 
-During Phase 4 (v7.5.4.x) and Phase 5 (v7.5.5.x) of the ESP32-GW Multi-Sensor Gateway project, implementation prompts were written to guide AI coding agents through each development step. These prompts went through three iterations:
+During Phase 4 (v7.5.4.x) and Phase 5 (v7.5.5.x) of the project, implementation prompts were written to guide AI coding agents through each development step. These prompts went through three iterations:
 
 1. **Original prompts** — high-level scope and acceptance criteria, written from the implementation plan
 2. **First expanded prompts** — added more context, code examples, and explicit file lists
