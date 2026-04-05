@@ -104,6 +104,29 @@ After each PR is merged, a consolidated audit document is created (see [`prompts
 
 All documents in this repository originate from another project — an ESP32 BLE gateway with multi-sensor aggregation, developed primarily with LLM coding agents.
 
+How actual development looks like at this moment:
+
+- The exact coding agent's prompt is given to the coding agent
+- Agent executes the prompt - depending on scope, it can be 2 or 40 minutes
+- Once agent finishes the task, PR is open
+- Copilot's inline review and Gemini's inline review are posted
+- Other LLM's (Codex, GPT, Perplexity) full reviews of the PR are posted
+- Claude agent acts on reviews
+- Claude Sonnet analyzes all the reviews and fixes made by Claude Agent and determines if follow-up fixes are needed
+- If follow-up fixes are needed, Claude Sonnet provides the exact prompt for the coding agent to fix the remaining issues
+- The previous three steps repeat until all bugs are fixes and all deliverables from the coding agent's original prompt are fulfilled
+- Once testing is done (via automated gates or manually), PR is merged and tagged
+- Prompts' master index is updated with the current step's delivery
+- Session handoff document is generated for the next step and if necessary next step's prompt is updated with lessons from the current step 
+- After every phase is over, Claude Opus reviews all PRs and bugs and lessons from the phase and updates the master guide document and prompts for the next phase
+- Next phase starts
+  
+---
+
+## Source Project
+
+All documents in this repository originate from another project — an ESP32 BLE gateway with multi-sensor aggregation, developed primarily with LLM coding agents.
+
 ---
 
 ## License
