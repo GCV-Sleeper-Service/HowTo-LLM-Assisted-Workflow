@@ -5,7 +5,6 @@
 _Implementation Plan for v7.6.0.x_
 _Date: 2026-03-25_
 _Prerequisite: Phase 6 Complete (v7.5.6.4 on `main`)_
-_Repo: [GCV-Sleeper-Service/ESP32-GW-multi-sensor](https://github.com/GCV-Sleeper-Service/ESP32-GW-multi-sensor)_
 
 ---
 
