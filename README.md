@@ -1,6 +1,6 @@
 # HowTo-LLM-Assisted-Workflow
 
-A practical guide to using LLMs (Large Language Models) productively in software development, based on real-world experience from the [ESP32-GW-multi-sensor](https://github.com/GCV-Sleeper-Service/ESP32-GW-multi-sensor) project.
+A practical guide to using LLMs (Large Language Models) productively in software development, based on real-world experience.
 
 ---
 
