@@ -456,7 +456,7 @@ After each step completes:
 | **Phase D prompt files linked** | Canonical prompts exist in `prompts/phaseD/`, replacing "_Prompt not yet created_" placeholders |
 | **v7.5.7.0 audit corrections applied to Phase D prompts** | LESSON-OPS-086 (Do-NOT regeneration churn), LESSON-OPS-087 (cross-language constants), LESSON-OPS-088 (compliance table templating) |
 | **Device testing sections expanded** | Specific build/flash commands, `esphome clean` requirement, preflight steps, concrete device IPs |
-| **`curl -X POST` commands fixed** | Added `-H "Content-Length: 0"` — curl does not send POST without it |
+| **`curl -X POST` commands fixed** | Interim fix added `-H "Content-Length: 0"` at the time; this was later superseded by Critical Rule 39, which requires using `-d 'a=1'` instead and not `-H "Content-Length: 0"` |
 
 ### 2026-03-27 — Post-Phase-6 Completion Update
 
