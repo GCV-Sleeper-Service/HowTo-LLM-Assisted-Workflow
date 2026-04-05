@@ -102,7 +102,7 @@ After each PR is merged, a consolidated audit document is created (see [`prompts
 
 ## Source Project
 
-All documents in this repository originate from the [ESP32-GW-multi-sensor](https://github.com/GCV-Sleeper-Service/ESP32-GW-multi-sensor) project — an ESP32 BLE gateway with multi-sensor aggregation, developed primarily with LLM coding agents.
+All documents in this repository originate from another project — an ESP32 BLE gateway with multi-sensor aggregation, developed primarily with LLM coding agents.
 
 ---
 
