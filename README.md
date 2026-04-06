@@ -102,7 +102,7 @@ After each PR is merged, a consolidated audit document is created (see [`prompts
 
 ## Development - Step by Step 
 
-All documents in this repository originate from another project — an ESP32 BLE gateway with multi-sensor aggregation, developed primarily with LLM coding agents.
+All documents in this repository originate from another real and live project — an ESP32 BLE gateway with multi-sensor aggregation, developed exclusively with LLM coding agents.
 
 How actual development looks like at this moment:
 
