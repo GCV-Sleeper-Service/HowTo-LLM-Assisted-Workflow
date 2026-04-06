@@ -28,7 +28,7 @@ This repository captures the documentation, prompt templates, and workflow artif
 
 ### Reference Examples — Real Project Documents
 
-These files are taken directly from the ESP32-GW-multi-sensor project. They demonstrate the documentation practices and workflow artifacts described in the guide.
+These files are taken directly from the real project. They demonstrate the documentation practices and workflow artifacts described in the guide.
 
 | File | Description |
 |------|-------------|
