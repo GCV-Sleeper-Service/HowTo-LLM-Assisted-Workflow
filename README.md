@@ -100,7 +100,7 @@ After each PR is merged, a consolidated audit document is created (see [`prompts
 
 ---
 
-## Development - Step by Step 
+## Development Workflow - Step by Step 
 
 All documents in this repository originate from another real and live project — an ESP32 BLE gateway with multi-sensor aggregation, developed exclusively with LLM coding agents.
 
@@ -121,12 +121,6 @@ How actual development looks like at this moment:
 - After every phase is over, Claude Opus reviews all PRs and bugs and lessons from the phase and updates the master guide document and prompts for the next phase
 - Next phase starts
   
----
-
-## Source Project
-
-All documents in this repository originate from another project — an ESP32 BLE gateway with multi-sensor aggregation, developed primarily with LLM coding agents.
-
 ---
 
 ## License
